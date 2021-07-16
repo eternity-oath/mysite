@@ -15,6 +15,7 @@
   font-style: normal;
 }
 
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "Flaticon";
@@ -41,3 +42,5 @@ margin-left: 20px;
 .flaticon-insurance:before { content: "\f108"; }
 .flaticon-retirement-plan:before { content: "\f109"; }
 .flaticon-technology:before { content: "\f10a"; }
+.flaticon-case:before { content: "\f10a"; }
+.flaticon-qualifications:before { content: "\f10a"; }

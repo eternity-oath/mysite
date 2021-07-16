@@ -1,18 +1,26 @@
 from django.core.paginator import Paginator, EmptyPage, InvalidPage, PageNotAnInteger
 from django.http import HttpResponse
 from django.shortcuts import render
-
-from  yuquan.models import Category, Article, Message
 from django.shortcuts import get_object_or_404
-
+from yuquan.models import Category, Article, Message, Cases, Users
+from yuquan import models
 
 def index(request):
     return render(request, 'yuquan/index.html',  locals())
 
 
+def users(request, category_name):
+    if category_name == "weixin":
+        title = "微信"
+    else:
+        title = "QQ"
+    user_list = Users.objects.all().order_by('id')
+    context = {"user_list": user_list, "category_name": category_name, 'title': title}
+    return render(request, 'yuquan/users_contact.html', context)
+
+
 def services(request):
     return render(request, 'yuquan/services.html')
-
 
 
 def contact(request):
@@ -41,7 +49,7 @@ def message(request):
         else:
             Message.objects.create(name=name, phone=phone, email=email, content=content)
     except Exception as e:
-        print(e)
+        print('error', e)
     return render(request, 'yuquan/about.html')
 
 
@@ -49,15 +57,7 @@ def blog_detail(request):
     return render(request, 'yuquan/blog-single.html')
 
 
-def category_name(request, category_name):
-    categorys = Category.objects.filter(slug=category_name)
-    master_category = Category.objects.get(slug=category_name)
-
-    son_category = Category.objects.filter(parent_category=master_category.id)
-    article_list = Article.objects.filter(article_category_id__parent_category=master_category.id).values('id', 'title',
-              'subtitle', 'body', 'pub_time', 'article_category__slug')
-
-    count = article_list.count()
+def paginator(request, data_list, number):
     after_range_num = 3  # 当前页前显示5页
     befor_range_num = 3  # 当前页后显示4页
     try:  # 如果请求的页码少于1或者类型错误，则跳转到第1页
@@ -66,7 +66,7 @@ def category_name(request, category_name):
             page = 1
     except ValueError:
         page = 1
-    paginator = Paginator(article_list, 5)  # 设置books在每页显示的数量，这里为50
+    paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
     try:  # 跳转到请求页面，如果该页不存在或者超过则跳转到尾页
         page_list = paginator.page(page)
     except(EmptyPage, InvalidPage, PageNotAnInteger):
@@ -75,12 +75,30 @@ def category_name(request, category_name):
         page_range = paginator.page_range[page - after_range_num:page + befor_range_num]
     else:
         page_range = paginator.page_range[0:int(page) + befor_range_num]
-    context = {"master_category": master_category, "son_category": son_category, "article_list": article_list,
-               'count': count, 'page_list': page_list, 'page_range': page_range, "title": master_category.name}
+    return page_list, page_range
 
+
+def category_name(request, category_name):
+    categorys = Category.objects.filter(slug=category_name)
+    master_category = Category.objects.get(slug=category_name)
+    son_category = Category.objects.filter(parent_category=master_category.id)
     if not categorys:
         return render(request, '404.html')
-    else :
+    else:
+        if category_name == 'khal':
+            # 处理
+            data_list = Cases.objects.filter(case_category_id__parent_category=master_category.id).values('id', 'name',
+                'image', 'case_category', 'case_category__slug')
+            # 分页
+            page_list, page_range = paginator(request, data_list, 6)
+        else:
+            data_list = Article.objects.filter(article_category_id__parent_category=master_category.id).values('id',
+                'title', 'subtitle', 'body', 'pub_time', 'article_category__slug')
+            # 分页
+            page_list, page_range = paginator(request, data_list, 5)
+        count = data_list.count()
+        context = {"master_category": master_category, "son_category": son_category, "data_list": data_list,
+                   'count': count, 'page_list': page_list, 'page_range': page_range, "title": master_category.name}
         return render(request, 'yuquan/blog.html',context)
 
 
@@ -95,30 +113,22 @@ def son_category(request, category_name, son_category):
     if category.parent_category_id != master_category.id:
         return render(request, '404.html'),
     else:
-        article_list = Article.objects.filter(article_category=category.id).values('id', 'title',
-              'subtitle', 'body', 'pub_time', 'article_category__slug')
-        count = article_list.count()
-        after_range_num = 3  # 当前页前显示5页
-        befor_range_num = 3  # 当前页后显示4页
-        try:  # 如果请求的页码少于1或者类型错误，则跳转到第1页
-            page = int(request.GET.get("page", 1))
-            if page < 1:
-                page = 1
-        except ValueError:
-            page = 1
-        paginator = Paginator(article_list, 5)  # 设置books在每页显示的数量，这里为50
-        try:  # 跳转到请求页面，如果该页不存在或者超过则跳转到尾页
-            page_list = paginator.page(page)
-        except(EmptyPage, InvalidPage, PageNotAnInteger):
-            page_list = paginator.page(paginator.num_pages)
-        if page >= after_range_num:
-            page_range = paginator.page_range[page - after_range_num:page + befor_range_num]
+        if category_name == 'khal':
+            # 处理
+            data_list = Cases.objects.filter(case_category=category.id).values('id', 'name',
+                'image', 'case_category', 'case_category__slug')
+            # 分页
+            page_list, page_range = paginator(request, data_list, 6)
         else:
-            page_range = paginator.page_range[0:int(page) + befor_range_num]
+            data_list = Article.objects.filter(article_category=category.id).values('id', 'title',
+                  'subtitle', 'body', 'pub_time', 'article_category__slug')
+            # 分页
+            page_list, page_range = paginator(request, data_list, 5)
 
-        context = {"master_category": master_category, "son_category": son_category_list, "article_list": article_list,
+        count = data_list.count()
+        context = {"master_category": master_category, "son_category": son_category_list, "data_list": data_list,
                    'count': count, 'page_list': page_list, 'page_range': page_range, "title": category.name}
-        return render(request, 'yuquan/blog.html', context, )
+        return render(request, 'yuquan/blog.html', context,)
 
 
 def get_category_tree(category_name):
@@ -139,8 +149,16 @@ def article(request, category_slug, son_category_slug, id):
     current_category = Category.objects.get(slug=son_category_slug)
     son_category = Category.objects.filter(parent_category=master_category.id)
 
-    all_article = Article.objects.filter(article_category__slug=son_category_slug).values('id', 'title',
-              'subtitle', 'body', 'pub_time', 'article_category', 'article_category__slug')
+    if category_slug == 'khal':
+        data_list = Cases.objects.filter(case_category__slug=son_category_slug).values('id', 'name', 'image', 'views',
+                   'case_category', 'case_category__slug')
+        # 浏览量 + 1
+        case = models.Cases.objects.get(id=id)
+        case.views += 1
+        case.save()
+    else:
+        data_list = Article.objects.filter(article_category__slug=son_category_slug).values('id', 'title',
+                  'subtitle', 'body', 'pub_time', 'article_category', 'article_category__slug')
     previous_article_index = 0
 
     next_article_index = 0
@@ -149,13 +167,13 @@ def article(request, category_slug, son_category_slug, id):
     previous_index = 0
     next_index = 0
     current_index = 0
-    current_article = None
-    if len(all_article) > 1:
-        for index, article in enumerate(all_article):
+    current_data = None
+    if len(data_list) > 1:
+        for index, article in enumerate(data_list):
             if index == 0:
                 previous_index = 0
                 next_index = index + 1
-            elif index == len(all_article) - 1:
+            elif index == len(data_list) - 1:
                 previous_index = index - 1
                 next_index = index
             else:
@@ -164,23 +182,35 @@ def article(request, category_slug, son_category_slug, id):
             # 通过id判断当前记录;
             if article.get("id") == id:
                 current_index = index
-                current_article = article
+                current_data = article
                 if current_index == 0:
-                    next_article_index = all_article[next_index].get("id")
-                    nex_article_title = all_article[next_index].get("title")
+                    next_article_index = data_list[next_index].get("id")
+                    if category_slug == 'khal':
+                        nex_article_title = data_list[next_index].get("name")
+                    else:
+                        nex_article_title = data_list[next_index].get("title")
                 elif current_index == next_index:
-                    previous_article_index = all_article[previous_index].get("id")
-                    previous_article_title = all_article[previous_index].get("title")
+                    previous_article_index = data_list[previous_index].get("id")
+                    if category_slug == 'khal':
+                        previous_article_title = data_list[previous_index].get("name")
+                    else:
+                        previous_article_title = data_list[previous_index].get("title")
                 else:
-                    previous_article_index = all_article[previous_index].get("id")
-                    next_article_index = all_article[next_index].get("id")
-                    previous_article_title = all_article[previous_index].get("title")
-                    nex_article_title = all_article[next_index].get("title")
+                    previous_article_index = data_list[previous_index].get("id")
+                    next_article_index = data_list[next_index].get("id")
+                    if category_slug == 'khal':
+                        previous_article_title = data_list[previous_index].get("name")
+                        nex_article_title = data_list[next_index].get("name")
+                    else:
+                        previous_article_title = data_list[previous_index].get("title")
+                        nex_article_title = data_list[next_index].get("title")
+
+
                 break
     else:
-        current_article = all_article[0]
-    print(nex_article_title)
-    context = {"master_category": master_category, "son_category": son_category, "current_article": current_article,
+        current_data = data_list[0]
+
+    context = {"master_category": master_category, "son_category": son_category, "current_data": current_data,
                'previous_article_index': previous_article_index, 'next_article_index': next_article_index,
                'title': current_category.name, "previous_article_title": previous_article_title, "nex_article_title":
                nex_article_title}

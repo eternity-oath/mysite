@@ -4,14 +4,15 @@
 <section class="slider-hero">
     <div class="overlay"></div>
     <div class="hero-slider">
+        {% for index_image in index_image_list %}
         <div class="item">
             <div class="work">
-                <div class="img img2 d-flex align-items-center js-fullheight" style="background-image: url(../../static/images/bg_1.jpg);">
+                <div class="img img2 d-flex align-items-center js-fullheight" style="background-image: url('/upload/{{ index_image.image_url }}');">
                     <div class="container-xl">
                         <div class="row d-flex justify-content-center">
                             <div class="col-md-7">
                                 <div class="text text-center mt-lg-5">
-                                    <h1 class="mb-4">我们随时为您提供帮助!</h1>
+                                    <h1 class="mb-4">{{ index_image.name }}</h1>
                                 </div>
                             </div>
                         </div>
@@ -19,21 +20,8 @@
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="work">
-                <div class="img d-flex align-items-center justify-content-center js-fullheight" style="background-image: url(../../static/images/bg_2.jpg);">
-                    <div class="container-xl">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-7">
-                                <div class="text text-center mt-lg-5">
-                                    <h1 class="mb-4">与我们的专家一起制定您的计划</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
+
     </div>
 </section>
 
@@ -102,95 +90,22 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap flow-wrap-right">
-                    <div class="icon">
-                        <span class="flaticon-accounting"></span>
+            {% for category in categorys %}
+                {% if not category.parent_category %}
+                    <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <div class="flow-wrap flow-wrap-right">
+                            <a href="/{{ category.slug }}" >
+                                <div class="icon">
+                                    <span class={{ category.icon }}></span>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ category.name }}</h2>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h2>Financial Planning</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-financial"></span>
-                    </div>
-                    <div class="text">
-                        <h2>Investments Management</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-recession"></span>
-                    </div>
-                    <div class="text">
-                        <h2>Business Loan</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-tax"></span>
-                    </div>
-                    <div class="text">
-                        <h2>Taxes Consulting</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-insurance"></span>
-                    </div>
-                    <div class="text">
-                        <h2>Insurance Consulting</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-retirement-plan"></span>
-                    </div>
-                    <div class="text">
-                        <h2>Retirement Planning</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-risk"></span>
-                    </div>
-                    <div class="text">
-                        <h2>风险管理</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 text-center d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
-                <div class="flow-wrap">
-                    <div class="icon">
-                        <span class="flaticon-technology"></span>
-                    </div>
-                    <div class="text">
-                        <h2>技术咨询</h2>
-                        <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                    </div>
-                </div>
-            </div>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </section>
@@ -262,12 +177,15 @@
                     {% for cases in cases_list %}
                         <div class="item">
                             <div class="testimony-wrap" >
+                                <a href="/{{ cases.case_category_id__parent_category__slug }}/{{ cases.case_category__slug }}/{{ cases.id }}">
                                     <img src="upload/{{ cases.image  }}" width="250"  style="display: block;margin:0 auto;">
-                                <div class="d-flex align-items-center">
-                                  <div class="text"  style="display: block;margin:0 auto;">
-                                     {{ cases.name }}
-                                  </div>
-                                </div>
+                                    <div class="d-flex align-items-center">
+                                      <div class="text"  style="display: block;margin:0 auto;">
+                                         {{ cases.name }}
+                                      </div>
+                                    </div>
+                                </a>
+
                             </div>
                         </div>
                     {% endfor %}

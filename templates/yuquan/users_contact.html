@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block info %}
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_3.jpg'%});">
+  <div class="overlay"></div>
+</section>
+<section class="ftco-section">
+  <div class="container">
+    <div class="row g-lg-5">
+      <div class="col-lg-4 sidebar pl-md-4 ">
+        <div class="col-md-12">
+          <div class="col-md-12">
+              <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="text">
+                  <h3 class="heading mb-3"> {{enterprise.name}}</h3>
+                  <p>资质热线：{{enterprise.phone}}</p>
+                  <p>地址：{{enterprise.address}}</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="row justify-content-center">
+            <h3><span class="ion ion-ios-arrow-round-forward me-2"><span class="text" style="padding-left: 10px">{{ title }}</span></span></h3>
+            {% if category_name == 'weixin' %}
+                {% if user_list %}
+                    <div class="row">
+                        {% for data in user_list %}
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up"  >
+                          <div class="block-7">
+                            <div class="text-center">
+                                <a href="/upload/{{ data.wechat_url }}" class="gallery-wrap img mb-4 d-flex align-items-end justify-content-center glightbox" style="background-image: url('/upload/{{ data.wechat_url }}'); height: 250px; width: 250px">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                         {% endfor %}
+                    </div>
+                {% else %}
+                    <div>
+                        您还没有选择文章数据，请先选择数据
+                    </div>
+                {% endif %}
+            {% else %}
+                {% if user_list %}
+                    <div class="row">
+                        {% for data in user_list %}
+                            <div class="col-md-6 col-lg-4" data-aos="fade-up"  >
+                          <div class="block-7">
+                            <div class="text-center">
+                                <a href="/upload/{{ data.wechat_url }}" class="gallery-wrap img mb-4 d-flex align-items-end justify-content-center glightbox" style="background-image: url('/upload/{{ data.wechat_url }}'); height: 250px; width: 250px">
+                                  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-search"></span></div>
+                                </a>
+                            </div>
+                          </div>
+                        </div>
+                         {% endfor %}
+                    </div>
+                {% else %}
+                    <div>
+                        您还没有选择文章数据，请先选择数据
+                    </div>
+                {% endif %}
+
+            {% endif %}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    {% endblock info %}

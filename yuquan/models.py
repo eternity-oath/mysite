@@ -71,6 +71,17 @@ class Enterprise(BaseModel):
     video_image_url = models.ImageField('企业视频图片', upload_to='enterprise_image/%Y%m%d/', blank=True, null=True)
     recruit_image_url = models.ImageField('招聘图片', upload_to='enterprise_image/%Y%m%d/', blank=True, null=True)
     recruit = MDTextField('招聘')
+    beian_image_url = models.ImageField('备案图片', upload_to='enterprise_image/%Y%m%d/', blank=True, null=True)
+    beiancode = models.CharField(
+        '备案号',
+        max_length=2000,
+        null=True,
+        blank=True)
+    gongan_beiancode = models.TextField(
+        '公安备案号',
+        max_length=2000,
+        null=True,
+        blank=True)
     class Meta:
         db_table='enterprise'
         verbose_name = "公司"
@@ -109,11 +120,13 @@ class Article(BaseModel):
 class Cases(BaseModel):
     name = models.CharField(max_length=30, help_text="名称")
     image = models.ImageField('案例', upload_to='cases_image/%Y%m%d/', blank=True, null=True)
+    views = models.PositiveIntegerField('浏览量', default=0)
+    case_category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True)
     # 这里定义一个方法，作用是当用户注册时没有上传照片，模板中调用 [ModelName].[ImageFieldName].url 时赋予一个默认路径
 
     def photo_url(self):
-        if self.photo and hasattr(self.photo, 'url'):
-            return self.photo.url
+        if self.image and hasattr(self.image, 'url'):
+            return self.image.url
         else:
             return '/media/default/user.jpg'
 
@@ -128,7 +141,7 @@ class Cases(BaseModel):
 class Customer(BaseModel):
     title = models.CharField(max_length=40, help_text="名称")
     comment = models.CharField(max_length=200, help_text="评价")
-    photo_url = models.ImageField('案例', upload_to='photo_image/%Y%m%d/', blank=True, null=True)
+    photo_url = models.ImageField('客户url', upload_to='photo_image/%Y%m%d/', blank=True, null=True)
 
     class Meta:
         db_table = 'customer'
@@ -160,3 +173,28 @@ class Links(BaseModel):
     def __str__(self):
         return self.name
 
+
+class IndexImage(BaseModel):
+    """主页图片"""
+    name = models.CharField(max_length=40, help_text="名称")
+    image_url = models.ImageField('主页图片', upload_to='index_image/%Y%m%d/', blank=True, null=True)
+    class Meta:
+        db_table = 'index_image'
+        verbose_name = "主页滚动图片"
+
+    def __str__(self):
+        return self.name
+
+
+class Users(BaseModel):
+    """主页图片"""
+    name = models.CharField(max_length=40, help_text="名称")
+    wechat_url = models.ImageField('微信图片', upload_to='user_image/%Y%m%d/', blank=True, null=True)
+    qq_url = models.ImageField('qq图片', upload_to='user_image/%Y%m%d/', blank=True, null=True)
+    describe = models.CharField(max_length=225, help_text="描述")
+    class Meta:
+        db_table = 'users'
+        verbose_name = "员工"
+
+    def __str__(self):
+        return self.name
