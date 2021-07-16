@@ -1,0 +1,126 @@
+ {% extends 'base.html' %}
+ {% block info %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('../static/images/bg_3.jpg');">
+      <div class="overlay"></div>
+    </section>
+    </section>
+    <section class="ftco-section ftco-image img" style="background-image: url('/upload/{{ enterprise.video_image_url }}' );">
+        <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-6 heading-section"   data-aos-duration="1000">
+            <span class="subheading">关于豫泉</span>
+            <h2 class="mb-4">品质让客户信赖</h2>
+            <p>{{ enterprise.video_describe }}</p>
+            <a href="/upload/{{ enterprise.video_url }}" class="d-flex glightbox pt-4 align-items-center">
+              <div class="icon">
+                <span class="fa fa-play"></span>
+              </div>
+              <div class="text ps-4">
+                <span>Watch Video</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section">
+  <div class="container">
+    <div class="row g-lg-5">
+
+      <div class="col-lg-4 sidebar pl-md-4 ">
+            <div class="col-md-12">
+              <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              </div>
+              <div class="col-md-12">
+                  <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="text">
+                      <h3 class="heading mb-3"> {{enterprise.name}}</h3>
+                      <p>资质热线：{{enterprise.phone}}</p>
+                      <p>地址：{{enterprise.address}}</p>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      <div class="col-lg-8">
+        <div class="row justify-content-center">
+             <h2 class="mb-4">关于豫泉</h2>
+            <p>{{ enterprise.describe }}</p>
+        </div>
+        <div class="row justify-content-center">
+            <h2 class="mb-4">企业愿景</h2>
+            <pre>{{ enterprise.vision }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+     <section class="ftco-section ftco-no-pt ftco-no-pb">
+      <div class="container-xl">
+        <div class="row g-lg-5">
+          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100" data-aos-duration="300">
+            <div class="img w-100" style="background-image: url('/upload/{{ enterprise.recruit_image_url }}' );">
+            </div>
+          </div>
+          <div class="col-lg-6 heading-section d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            <div class="mt-0 my-lg-5 py-5">
+              <div class="mt-0 my-lg-5 py-5">
+                    <h2 class="mb-4">关于招聘</h2>
+                    <pre>{{ enterprise.recruit }}</pre>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="ftco-section ftco-no-pt">
+      <div class="container-xl">
+          <div class="col-lg-8">
+            <div class="pt-5 mt-5">
+            <div class="comment-form-wrap pt-5">
+            <h3 class="mb-5" style="font-size: 30px;">给我们留言</h3>
+            <form action="/message/" class="p-4 p-lg-5 comment-form"   method="post">
+                {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">姓名 *</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">电话 *</label>
+                    <input type="phone" class="form-control" id="phone" name="phone">
+                  </div>
+                </div>
+               <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">邮箱 *</label>
+                    <input type="text" class="form-control" id="email" name="email">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="message">需求</label>
+                    <textarea  id="message" cols="30" rows="10" class="form-control" name="content"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input type="submit" value="提交" class="btn py-3 px-4 btn-primary">
+                  </div>
+                </div>
+              </div>
+
+            </form>
+      </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+ {% endblock info %}

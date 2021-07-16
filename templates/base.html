@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title>{{enterprise.name}}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/tiny-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'css/glightbox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/datepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="top-wrap">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-center mb-2 mb-md-0">
+                    <div class="con">
+                        <p class="mb-0"><span class="fa fa-phone"></span> 电话: {{enterprise.phone}}</p>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center mb-2 mb-md-0">
+                    <div class="con">
+                        <p class="mb-0"><span class="fa fa-map-o"></span>地址：{{enterprise.address}}</p>
+                    </div>
+                </div>
+                <div class="col-md d-flex justify-content-start justify-content-md-end align-items-center">
+                    <p class="ftco-social d-flex">
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-weixin"></span></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-qq"></span></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-users"></span></a>
+                        <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg  ftco-navbar-light ">
+        <div class="container-xl">
+            <a class="navbar-brand" href="/">
+                <h4>{{enterprise.name}}</h4>
+                <span>yuquanjiaoyu</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="fa fa-bars"></span> Menu
+		    </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/">首页</a></li>
+                    {% for category in categorys %}
+                        {% if not category.parent_category %}
+                            <li class="nav-item dropdown"><a class="nav-link active"  href="/{{ category.slug }}">{{ category.name }}</a>
+                                <ul class="dropdown-menu" aria-expanded="false">
+                                {% for categ in categorys %}
+                                    {% if categ.parent_category %}
+                                        {% if category.name == categ.parent_category.name %}
+                                            <li class="nav-item "><a class="nav-link active" href="/{{ categ.slug }}">{{  categ.name }}</a></li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                    <li class="nav-item"><a class="nav-link active" href="/about">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block info %}
+    {% endblock info %}
+    <section class="ftco-intro-2 img" style="background-image: url({% static 'images/bg_3.jpg'%});">
+        <div class="overlay"></div>
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-10">
+                    <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div>
+                                <span class="subheading">准备起飞</span>
+                                <h1 class="mb-md-0 mb-4">寻找商机?</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-center">
+                            <p class="mb-0"><a href="/" class="btn btn-white py-md-4 py-3 px-md-5 px-4">开始</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="ftco-footer img" style="background-image: url({% static 'images/bg_1.jpg'%});">
+        <div class="overlay"></div>
+        <div class="container-xl">
+            <div class="row mb-5 justify-content-between">
+                <div class="col-md-6 col-lg">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2 logo d-flex">
+                            <a class="navbar-brand" href="/">
+                               <small> {{enterprise.short_name}}</small>
+                              <span>{{enterprise.english_name}}</span>
+                            </a>
+                        </h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map marker"></span><span class="text"> {{enterprise.address}}</span></li>
+                                <li><a href="tel://+86 {{enterprise.phone}}"><span class="icon fa fa-phone"></span><span class="text">{{enterprise.phone}}</span></a></li>
+                                <li><a href="mailto:{{enterprise.email}}"><span class="icon fa fa-paper-plane"></span><span class="text">{{enterprise.email}} </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2 logo d-flex">
+                            <a class="navbar-brand" href="#">
+                               <small>联系我们</small>
+                            </a>
+                        </h2>
+                        <div class="block-21 mb-4 d-flex">
+                            <div style="padding-right: 20px">
+                                <a href="#"><span class="fa fa-qq" style="padding-right: 20px"></span></a>
+                                <a class="blog-img img rounded" style="background-image: url(../static/images/image_1.jpg);"></a>
+                            </div>
+                            <di>
+                                <a href="#"><span class="fa fa-weixin" style="padding-right: 20px"></span></a>
+                                <a class="blog-img img rounded" style="background-image: url(../static/images/image_1.jpg);"></a>
+                            </di>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2"><a class="navbar-brand" href="#"><small>友情链接</small></a></h2>
+                        <div class="tag-widget post-tag-container mb-5 mt-5">
+                          <div class="tagcloud">
+                              {% for link in link_list %}
+                                <a href="{{ link.link_url }}" class="tag-cloud-link">{{ link.name }}</a>
+                              {% endfor %}
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid px-0 py-5 bg-darken">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="mb-0" style="font-size: 14px;">Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" rel="nofollow noopener">Colorlib</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/tiny-slider.js' %}"></script>
+    <script src="{% static 'js/glightbox.min.js' %}"></script>
+    <script src="{% static 'js/aos.js' %}"></script>
+    <script src="{% static 'js/datepicker.min.js' %}"></script>
+    <script src="{% static 'js/google-map.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+</body>
+
+</html>

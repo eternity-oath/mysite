@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block info %}
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_3.jpg'%});">
+  <div class="overlay"></div>
+</section>
+<section class="ftco-section">
+  <div class="container">
+    <div class="row g-lg-5">
+
+      <div class="col-lg-4 sidebar pl-md-4 ">
+            <div class="col-md-12">
+              <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                <div class="text">
+                  <h3 class="heading mb-3">{{master_category}}</h3>
+                  <ul class="categories me-md-4">
+                    {% for son in son_category %}
+                      <li ><a href="/{{master_category.slug}}/{{ son.slug }}" class="btn btn-primary">{{son.name}}</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="text">
+                      <h3 class="heading mb-3"> {{enterprise.name}}</h3>
+                      <p>资质热线：{{enterprise.phone}}</p>
+                      <p>地址：{{enterprise.address}}</p>
+
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+      <div class="col-lg-8">
+        <div class="row justify-content-center">
+            <h3><span class="ion ion-ios-arrow-round-forward me-2"><span class="text" style="padding-left: 10px">{{ title }}</span></h3>
+            {% if article_list %}
+                {% for article in article_list %}
+                  <div class="col-md-12">
+                    <div class="blog-entry d-flex justify-content-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                      <div class="text">
+                        <p class="meta"><span><i class="fa fa-calendar me-1"></i>{{ article.pub_time }}</span></p>
+                        <h3 class="heading mb-3"><a href="/{{master_category.slug}}/{{ article.article_category__slug }}/{{ article.id }}">{{ article.title }}</a></h3>
+                        <p>{{ article.subtitle }}</p>
+                      </div>
+                    </div>
+                  </div>
+                {% endfor %}
+        {% else %}
+            <div>
+                您还没有选择文章数据，请先选择数据
+            </div>
+        {% endif %}
+        </div>
+    </div>
+       <div class="row mt-5">
+              <div class="col text-center">
+                <div class="block-27">
+                    <ul>
+                        {% if page_list.has_previous %}
+                            <li ><a href="?page={{ page_list.number }}">首页</a></li>
+                            <li><a href="?page={{ page_list.previous_page_number }}" style="width: auto" >上一页</a></li>
+                        {% endif %}
+                        {% for p in page_range %}
+                            {% ifequal p page_list.number %}
+                            <li class="active">
+                                <a href="?page={{p}}">{{p}}</a>
+                            </li>
+                            {% else %}
+                                <li> <a href="?page={{p}}">{{p}}</a></li>
+                            {% endifequal %}
+                        {% endfor %}
+                        {% if page_list.has_next %}
+                            <li><a href="?page={{ page_list.next_page_number }}" style="width: auto" >下一页</a>
+                            <li><a href="?page={{ page_list.paginator.num_pages }}">末页</a></li>
+                        {% endif %}
+                        <li> [{{ page_list.number }}/{{ page_list.paginator.num_pages }}]</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</section>
+    {% endblock info %}
