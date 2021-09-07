@@ -50940,3 +50940,4 @@ uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
 -- unavailable modifier requested: 3 --
 Tue Sep  7 11:22:30 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (18.159.110.253)
 OSError: write error
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
