@@ -14,7 +14,7 @@ class MessageAdmin(admin.ModelAdmin):
 class CategoryAdmin(admin.ModelAdmin):
     actions_on_top = True
     # search_fields = ['name', 'parent_category', 'slug']
-    list_display = ('id', 'name', 'parent_category', 'slug', 'icon', 'created_time', 'last_mod_time')
+    list_display = ('id', 'name', 'parent_category', 'slug', 'icon', 'sort', 'created_time', 'last_mod_time')
     actions_on_bottom = True
 
 

@@ -136,4 +136,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, "mysite_static")
 MEDIA_ROOT = os.path.join(BASE_DIR, 'upload') # 注意此处不要写成列表或元组的形式
 MEDIA_URL = '/upload/'
 
-ALLOWED_HOSTS = ['182.92.111.65']
+ALLOWED_HOSTS = ['www.yuquanzixun.com','yuquanzixun.com',  '36.112.174.170','36.110.228.130','127.0.0.1','182.92.111.65']

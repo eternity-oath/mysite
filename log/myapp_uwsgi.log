@@ -48728,3 +48728,2215 @@ spawned uWSGI worker 4 (pid: 1733, cores: 1)
   paginator = Paginator(article_list, 5)  # 设置books在每页显示的数量，这里为50
 ./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
   paginator = Paginator(article_list, 5)  # 设置books在每页显示的数量，这里为50
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 11:44:41 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ab711acd30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ab711acd30 pid: 5427 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5427)
+spawned uWSGI worker 1 (pid: 5429, cores: 1)
+spawned uWSGI worker 2 (pid: 5430, cores: 1)
+spawned uWSGI worker 3 (pid: 5431, cores: 1)
+spawned uWSGI worker 4 (pid: 5432, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 11:46:30 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55e683e54d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e683e54d30 pid: 5758 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5758)
+spawned uWSGI worker 1 (pid: 5760, cores: 1)
+spawned uWSGI worker 2 (pid: 5761, cores: 1)
+spawned uWSGI worker 3 (pid: 5762, cores: 1)
+spawned uWSGI worker 4 (pid: 5763, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 11:49:35 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x558f4904ad30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x558f4904ad30 pid: 6011 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6011)
+spawned uWSGI worker 1 (pid: 6014, cores: 1)
+spawned uWSGI worker 2 (pid: 6015, cores: 1)
+spawned uWSGI worker 3 (pid: 6016, cores: 1)
+spawned uWSGI worker 4 (pid: 6017, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 13:29:33 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ab5c38dd30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ab5c38dd30 pid: 6507 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6507)
+spawned uWSGI worker 1 (pid: 6509, cores: 1)
+spawned uWSGI worker 2 (pid: 6510, cores: 1)
+spawned uWSGI worker 3 (pid: 6511, cores: 1)
+spawned uWSGI worker 4 (pid: 6512, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 13:42:52 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ac21552d40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ac21552d40 pid: 6540 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6540)
+spawned uWSGI worker 1 (pid: 6542, cores: 1)
+spawned uWSGI worker 2 (pid: 6543, cores: 1)
+spawned uWSGI worker 3 (pid: 6544, cores: 1)
+spawned uWSGI worker 4 (pid: 6545, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Fri Jul 16 17:37:13 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55a56e261d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a56e261d30 pid: 6778 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 6778)
+spawned uWSGI worker 1 (pid: 6780, cores: 1)
+spawned uWSGI worker 2 (pid: 6781, cores: 1)
+spawned uWSGI worker 3 (pid: 6782, cores: 1)
+spawned uWSGI worker 4 (pid: 6783, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+Sat Jul 17 09:12:28 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (117.132.183.73)
+OSError: write error
+Sat Jul 17 09:14:51 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (117.132.183.144)
+OSError: write error
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul 19 16:35:07 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x564229ebad30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564229ebad30 pid: 11668 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11668)
+spawned uWSGI worker 1 (pid: 11670, cores: 1)
+spawned uWSGI worker 2 (pid: 11671, cores: 1)
+spawned uWSGI worker 3 (pid: 11672, cores: 1)
+spawned uWSGI worker 4 (pid: 11673, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+...brutally killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+binary reloading uWSGI...
+chdir() to /root/mysite
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /root/.virtualenvs/django_py3/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul 19 16:45:13 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55ff087877b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ff087877b0 pid: 11668 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11668)
+spawned uWSGI worker 1 (pid: 11737, cores: 1)
+spawned uWSGI worker 2 (pid: 11738, cores: 1)
+spawned uWSGI worker 3 (pid: 11739, cores: 1)
+spawned uWSGI worker 4 (pid: 11740, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul 19 16:50:38 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557b5865ed30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x557b5865ed30 pid: 890 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 890)
+spawned uWSGI worker 1 (pid: 892, cores: 1)
+spawned uWSGI worker 2 (pid: 893, cores: 1)
+spawned uWSGI worker 3 (pid: 894, cores: 1)
+spawned uWSGI worker 4 (pid: 895, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jul 19 17:03:24 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b081b1dd40
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b081b1dd40 pid: 1005 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1005)
+spawned uWSGI worker 1 (pid: 1007, cores: 1)
+spawned uWSGI worker 2 (pid: 1008, cores: 1)
+spawned uWSGI worker 3 (pid: 1009, cores: 1)
+spawned uWSGI worker 4 (pid: 1010, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+Tue Aug  3 07:10:34 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (161.35.191.227)
+OSError: write error
+Thu Aug 12 12:09:29 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (106.75.159.253)
+OSError: write error
+Sat Aug 14 13:32:16 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (123.160.221.33)
+OSError: write error
+Mon Aug 16 02:33:20 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (211.90.1.206)
+OSError: write error
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 10:23:12 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55f19198cd30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 3 seconds on interpreter 0x55f19198cd30 pid: 27972 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27972)
+spawned uWSGI worker 1 (pid: 27974, cores: 1)
+spawned uWSGI worker 2 (pid: 27975, cores: 1)
+spawned uWSGI worker 3 (pid: 27976, cores: 1)
+spawned uWSGI worker 4 (pid: 27977, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 10:51:41 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559b6a4c2d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559b6a4c2d30 pid: 28184 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28184)
+spawned uWSGI worker 1 (pid: 28186, cores: 1)
+spawned uWSGI worker 2 (pid: 28187, cores: 1)
+spawned uWSGI worker 3 (pid: 28188, cores: 1)
+spawned uWSGI worker 4 (pid: 28189, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 10:52:13 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 10:53:24 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+...brutally killing workers...
+Gracefully killing worker 1 (pid: 28186)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /root/mysite
+closing all non-uwsgi socket fds > 2 (max_fd = 65535)...
+found fd 3 mapped to socket 0 (127.0.0.1:8000)
+running /root/.virtualenvs/django_py3/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 10:55:27 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5607fbb327b0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5607fbb327b0 pid: 28184 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 28184)
+spawned uWSGI worker 1 (pid: 28288, cores: 1)
+spawned uWSGI worker 2 (pid: 28289, cores: 1)
+spawned uWSGI worker 3 (pid: 28290, cores: 1)
+spawned uWSGI worker 4 (pid: 28291, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 11:00:50 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561a14650d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 4 seconds on interpreter 0x561a14650d30 pid: 1398 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1398)
+spawned uWSGI worker 1 (pid: 1400, cores: 1)
+spawned uWSGI worker 2 (pid: 1401, cores: 1)
+spawned uWSGI worker 3 (pid: 1402, cores: 1)
+spawned uWSGI worker 4 (pid: 1403, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:06:47 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557088252d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557088252d30 pid: 1780 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1780)
+spawned uWSGI worker 1 (pid: 1782, cores: 1)
+spawned uWSGI worker 2 (pid: 1783, cores: 1)
+spawned uWSGI worker 3 (pid: 1784, cores: 1)
+spawned uWSGI worker 4 (pid: 1785, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:07:19 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56198cdcfd30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56198cdcfd30 pid: 1791 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1791)
+spawned uWSGI worker 1 (pid: 1793, cores: 1)
+spawned uWSGI worker 2 (pid: 1794, cores: 1)
+spawned uWSGI worker 3 (pid: 1795, cores: 1)
+spawned uWSGI worker 4 (pid: 1796, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:18:42 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561812484d90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561812484d90 pid: 1843 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1843)
+spawned uWSGI worker 1 (pid: 1845, cores: 1)
+spawned uWSGI worker 2 (pid: 1846, cores: 1)
+spawned uWSGI worker 3 (pid: 1847, cores: 1)
+spawned uWSGI worker 4 (pid: 1848, cores: 1)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:18:50 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:19:59 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:21:55 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:22:52 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /etc/nginx
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:25:02 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d219b96d30
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55d219b96d30 pid: 1961 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1961)
+spawned uWSGI worker 1 (pid: 1963, cores: 1)
+spawned uWSGI worker 2 (pid: 1964, cores: 1)
+spawned uWSGI worker 3 (pid: 1965, cores: 1)
+spawned uWSGI worker 4 (pid: 1966, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+Tue Aug 17 13:25:37 2021 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Aug 17 13:25:37 2021 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Aug 17 13:25:37 2021 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Tue Aug 17 13:25:37 2021 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:27:31 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5583b1636d90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5583b1636d90 pid: 1983 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1983)
+spawned uWSGI worker 1 (pid: 1985, cores: 1)
+spawned uWSGI worker 2 (pid: 1986, cores: 1)
+spawned uWSGI worker 3 (pid: 1987, cores: 1)
+spawned uWSGI worker 4 (pid: 1988, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 13:28:06 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x560a81c38d90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x560a81c38d90 pid: 1995 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1995)
+spawned uWSGI worker 1 (pid: 1997, cores: 1)
+spawned uWSGI worker 2 (pid: 1998, cores: 1)
+spawned uWSGI worker 3 (pid: 1999, cores: 1)
+spawned uWSGI worker 4 (pid: 2000, cores: 1)
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 2 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 14:44:37 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x557d54e7bd90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x557d54e7bd90 pid: 2154 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2154)
+spawned uWSGI worker 1 (pid: 2156, cores: 1)
+spawned uWSGI worker 2 (pid: 2157, cores: 1)
+spawned uWSGI worker 3 (pid: 2158, cores: 1)
+spawned uWSGI worker 4 (pid: 2159, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Tue Aug 17 17:22:35 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x559bbecfdda0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559bbecfdda0 pid: 2539 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2539)
+spawned uWSGI worker 1 (pid: 2541, cores: 1)
+spawned uWSGI worker 2 (pid: 2542, cores: 1)
+spawned uWSGI worker 3 (pid: 2543, cores: 1)
+spawned uWSGI worker 4 (pid: 2544, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 1 --
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 65 --
+Empty python request. skip.
+-- unavailable modifier requested: 128 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+Thu Aug 19 11:17:41 2021 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 115.60.9.117) !!!
+Thu Aug 19 11:17:41 2021 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 341] during GET / (115.60.9.117)
+OSError: write error
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+invalid uwsgi request (current strsize: 0). skip.
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 23 --
+-- unavailable modifier requested: 23 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 23 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 23 --
+-- unavailable modifier requested: 23 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 1 --
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 65 --
+Empty python request. skip.
+-- unavailable modifier requested: 128 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 5 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 63 --
+Empty python request. skip.
+Empty python request. skip.
+Fri Aug 27 12:51:55 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (101.227.1.196)
+OSError: write error
+Fri Aug 27 12:52:04 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (101.227.1.197)
+OSError: write error
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+Fri Aug 27 21:21:15 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (117.132.183.37)
+OSError: write error
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+Fri Aug 27 21:23:16 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (117.132.183.69)
+OSError: write error
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 123 --
+Empty python request. skip.
+Sat Aug 28 13:21:11 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (165.227.136.172)
+OSError: write error
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 63 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 1 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+Empty python request. skip.
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Sun Aug 29 17:49:43 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55cdb75a4d90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55cdb75a4d90 pid: 27043 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 27043)
+spawned uWSGI worker 1 (pid: 27045, cores: 1)
+spawned uWSGI worker 2 (pid: 27046, cores: 1)
+spawned uWSGI worker 3 (pid: 27047, cores: 1)
+spawned uWSGI worker 4 (pid: 27048, cores: 1)
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 63 --
+Empty python request. skip.
+Empty python request. skip.
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 123 --
+Empty python request. skip.
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Resource temporarily unavailable [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+Empty python request. skip.
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 1 --
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 65 --
+Empty python request. skip.
+-- unavailable modifier requested: 128 --
+Empty python request. skip.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+SIGINT/SIGQUIT received...killing workers...
+worker 3 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Sep  2 17:33:23 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55c6584b1da0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c6584b1da0 pid: 5682 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5682)
+spawned uWSGI worker 1 (pid: 5684, cores: 1)
+spawned uWSGI worker 2 (pid: 5685, cores: 1)
+spawned uWSGI worker 3 (pid: 5686, cores: 1)
+spawned uWSGI worker 4 (pid: 5687, cores: 1)
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Sep  2 17:35:21 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b2eb523da0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b2eb523da0 pid: 5696 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5696)
+spawned uWSGI worker 1 (pid: 5698, cores: 1)
+spawned uWSGI worker 2 (pid: 5699, cores: 1)
+spawned uWSGI worker 3 (pid: 5700, cores: 1)
+spawned uWSGI worker 4 (pid: 5701, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Sep  2 17:37:54 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562bcc554da0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x562bcc554da0 pid: 5714 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5714)
+spawned uWSGI worker 1 (pid: 5716, cores: 1)
+spawned uWSGI worker 2 (pid: 5717, cores: 1)
+spawned uWSGI worker 3 (pid: 5718, cores: 1)
+spawned uWSGI worker 4 (pid: 5719, cores: 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Sep  2 17:38:51 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b9060fada0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b9060fada0 pid: 5802 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5802)
+spawned uWSGI worker 1 (pid: 5804, cores: 1)
+spawned uWSGI worker 2 (pid: 5805, cores: 1)
+spawned uWSGI worker 3 (pid: 5806, cores: 1)
+spawned uWSGI worker 4 (pid: 5807, cores: 1)
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+SIGINT/SIGQUIT received...killing workers...
+worker 2 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 1 buried after 2 seconds
+worker 3 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.19.1 (64bit) on [Thu Sep  2 17:42:04 2021] ***
+compiled with version: 7.5.0 on 30 June 2021 08:43:17
+os: Linux-4.15.0-144-generic #148-Ubuntu SMP Sat May 8 02:33:43 UTC 2021
+nodename: iZ2zeafuwy0jbb55jqf1mrZ
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/mysite
+writing pidfile to /root/mysite/uwsgi.pid
+detected binary path: /root/.virtualenvs/django_py3/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/mysite
+your processes number limit is 7791
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Jan 26 2021, 15:33:00)  [GCC 8.4.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56487d8a2da0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 671795 bytes (656 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56487d8a2da0 pid: 5895 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5895)
+spawned uWSGI worker 1 (pid: 5897, cores: 1)
+spawned uWSGI worker 2 (pid: 5898, cores: 1)
+spawned uWSGI worker 3 (pid: 5899, cores: 1)
+spawned uWSGI worker 4 (pid: 5900, cores: 1)
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 22 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 4 --
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 123 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+Empty python request. skip.
+-- unavailable modifier requested: 99 --
+Empty python request. skip.
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 204 --
+-- unavailable modifier requested: 87 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 160 --
+-- unavailable modifier requested: 1 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 123 --
+-- unavailable modifier requested: 123 --
+-- unavailable modifier requested: 123 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Article'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 123 --
+Empty python request. skip.
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+./yuquan/views.py:69: UnorderedObjectListWarning: Pagination may yield inconsistent results with an unordered object_list: <class 'yuquan.models.Cases'> QuerySet.
+  paginator = Paginator(data_list, number)  # 设置在每页显示的数量，这里为50
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+Empty python request. skip.
+Empty python request. skip.
+Empty python request. skip.
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+Empty python request. skip.
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Connection reset by peer [proto/uwsgi.c line 35]
+-- unavailable modifier requested: 5 --
+-- unavailable modifier requested: 4 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 22 --
+Empty python request. skip.
+Empty python request. skip.
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 58 --
+-- unavailable modifier requested: 1 --
+invalid uwsgi request (current strsize: 0). skip.
+uwsgi key cannot be null. skip this var.
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 128 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 22 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 3 --
+-- unavailable modifier requested: 4 --
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+uwsgi_proto_uwsgi_parser(): Success [proto/uwsgi.c line 40]
+-- unavailable modifier requested: 3 --
+Tue Sep  7 11:22:30 2021 - uwsgi_response_write_body_do(): Connection reset by peer [core/writer.c line 341] during HEAD / (18.159.110.253)
+OSError: write error

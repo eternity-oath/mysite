@@ -4,7 +4,7 @@ from yuquan.models import Category, Enterprise, Cases, Customer, ServiceFlow, Li
 
 
 def category(requests):
-    categorys = Category.objects.all().order_by('id')
+    categorys = Category.objects.all().order_by('sort')
     enterprise_list = Enterprise.objects.all().order_by('id')
     if enterprise_list:
         enterprise = enterprise_list[0]

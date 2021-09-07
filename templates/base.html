@@ -62,7 +62,7 @@
                                 {% for categ in categorys %}
                                     {% if categ.parent_category %}
                                         {% if category.name == categ.parent_category.name %}
-                                            <li class="nav-item "><a class="nav-link active" href="/{{ categ.slug }}">{{  categ.name }}</a></li>
+                                            <li class="nav-item "><a class="nav-link active" href="/{{ category.slug }}/{{ categ.slug }}">{{  categ.name }}</a></li>
                                         {% endif %}
                                     {% endif %}
                                 {% endfor %}
@@ -127,13 +127,13 @@
                         </h2>
                         <div class="block-21 mb-4 d-flex">
                             <div style="padding-right: 20px">
-                                <a href="#"><span class="fa fa-qq" style="padding-right: 20px"></span></a>
-                                <a class="blog-img img rounded" style="background-image: url('/upload/{{ index_user_image.wechat_url }}') ;"></a>
+                                <a href="/users/qq/" href="/users/qq/"><span class="fa fa-qq" style="padding-right: 20px"></span></a>
+                                <a class="blog-img img rounded" style="background-image: url('/upload/{{ index_user_image.qq_url }}') ;"></a>
                             </div>
-                            <di>
-                                <a href="#"><span class="fa fa-weixin" style="padding-right: 20px"></span></a>
-                                <a class="blog-img img rounded" style="background-image: url('/upload/{{ index_user_image.qq_url }}');"></a>
-                            </di>
+                            <div>
+                                <a href="/users/weixin/"><span class="fa fa-weixin" style="padding-right: 20px"></span></a>
+                                <a href="/users/weixin/" class="blog-img img rounded" style="background-image: url('/upload/{{ index_user_image.wechat_url }}');"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,8 +160,11 @@
                     <div class="col-md-12 text-center">
                         <p class="mb-0" style="font-size: 14px;">Copyright &copy; {{enterprise.name}}
                             <a href="https://beian.miit.gov.cn/#/Integrated/index" aria-hidden="true">{{ enterprise.beiancode }} </a>
-
-                            <span style="background-image: url('/upload/{{ enterprise.beian_image_url }}');"></span>  </p>
+			     <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41010502005132" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+                                     <img src="/upload/{{ enterprise.beian_image_url }}" style="float:left;" />
+                                    {{ enterprise.gongan_beiancode }}
+                                 </a>
+			</p>
                     </div>
                 </div>
             </div>

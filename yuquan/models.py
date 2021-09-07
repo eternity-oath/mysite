@@ -41,6 +41,7 @@ class Category(BaseModel):
         on_delete=models.CASCADE)
     slug = models.SlugField(default='no-slug', max_length=60, blank=True)
     icon = models.CharField(verbose_name='菜单图标', max_length=32)
+    sort = models.IntegerField(max_length=1, help_text="展示顺序")
     class Meta:
         ordering = ['name']
         verbose_name = "分类"
